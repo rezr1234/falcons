@@ -1,0 +1,1069 @@
+
+
+
+
+body{
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/falcons-links.appspot.com/o/images%2Fbackground.jpg?alt=media&token=8d39f29f-bdfa-4449-9297-a3f650edecf6);
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+      font-family: 'Cairo', sans-serif; /* استخدام خط كايرو */
+  background-size: cover; /* لتغطية كامل المساحة */
+background-position: center; /* لوضع الصورة في الوسط */
+
+
+}
+::selection {
+    background-color: #6bd36b;
+    color: white; /* اللون الذي ترغب في ظهور النص به عند التحديد */
+}
+
+/* From Uiverse.io by JaydipPrajapati1910 */ 
+.card {
+    width: 190px;
+    height: 254px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 0px 15px;
+    background-color: red;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    position: relative;
+    cursor: pointer;
+    font-weight: 900;
+    transition-duration: .2s;
+    background: linear-gradient(0deg, #000, #272727);
+  }
+  
+  .card:before, .card:after {
+    content: '';
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    border-radius: 10px;
+    background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00,#ffff00, #ff0000, #fb0094, 
+          #0000ff, #00ff00,#ffff00, #ff0000);
+    background-size: 400%;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    z-index: -1;
+    animation: steam 20s linear infinite;
+  }
+  
+  @keyframes steam {
+    0% {
+      background-position: 0 0;
+    }
+  
+    50% {
+      background-position: 400% 0;
+    }
+  
+    100% {
+      background-position: 0 0;
+    }
+  }
+  
+  .card:after {
+    filter: blur(100px);
+  }
+  
+  
+/* تخصيص شريط التمرير */
+::-webkit-scrollbar {
+    width: 4px; /* تقليل السماكة */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #0c3b0c; /* تغيير اللون إلى ذهبي */
+}
+
+::-webkit-scrollbar-track {
+      background-color: rgb(0 0 0 / 70%);
+
+}
+
+body {
+    background-color: #000000;
+}
+
+.header{
+    min-height: 80vh;
+    width: 100%;
+
+    position: relative;
+  
+}
+nav{
+display: flex;
+padding: 2% 6%;
+justify-content: space-between;
+align-items: center;
+}
+nav img{
+    width: 100px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+    transform: translateX(-11px);
+
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+  
+}
+.nav-links ul li a{
+    color: azure;
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #6bd36b;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover:after{
+    width: 100%;
+}
+.text-box{
+    width: 100%;
+    color: #6bd36b;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.text-box h1{
+    font-style: oblique;
+    font-size: 62px;
+}
+.text-box p{
+margin: 10px 0 40px;
+font-size: 14px;
+color: aliceblue;
+}
+.bbz-button{
+    display: inline-block;
+    text-decoration: none;
+    color: aliceblue;
+    border: 1px solid #6bd36b;
+    padding: 12px 34px;
+    font-size: 20px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.bbz-button:hover{
+    border: 1px solid rgba(0, 0, 96, 1);
+    background: rgba(0, 0, 96, 0.5);
+    transition: 1s;
+}
+
+@media(max-width: 700px){
+    .text-box h1{
+        font-style: oblique;
+        font-size: 20px;
+    }
+}
+
+
+.pirmadeze {
+    position: relative;
+    left: 23%;
+    top: 600px;
+    border: solid 2px white;
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+    width: 230px;
+}
+
+.pirmadeze:hover{
+    box-shadow: 0px 0px 50px  rgba(245, 245, 245, 0.2);
+}
+
+.pirmadeze h1 {
+    text-align: center;
+    font-size: 70px;
+}
+.pirmadeze p {
+    text-align: center;
+}
+
+.antradeze {
+    position: relative;
+    left: 25.5%;
+    top: 128px;
+    border: solid 2px white;
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+    width: 45%;
+}
+
+.antradeze:hover{
+    box-shadow: 0px 0px 50px  rgba(245, 245, 245, 0.2);
+}
+
+.antradeze h1 {
+    text-align: center;
+    font-size: 70px;
+}
+.antradeze p {
+    text-align: center;
+}
+
+.treciadeze {
+    position: relative;
+    left: 64%;
+    top: 298px;
+    border: solid 2px white;
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+    width: 230px;
+}
+
+.treciadeze:hover{
+    box-shadow: 0px 0px 50px  rgba(245, 245, 245, 0.2);
+}
+
+.treciadeze h1 {
+    text-align: center;
+    font-size: 70px;
+}
+.treciadeze p {
+    text-align: center;
+}
+
+/*-----ABOUT-----*/
+
+.about{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-txt{
+    flex-basis: 31%;
+    background: #6bd36b;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0px;
+}
+.about-txt:hover{
+box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+.team{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 10px;
+}
+.team-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.team-col img{
+    width: 100%;
+    display: block;
+}
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transition: 0.5s;
+}
+.layer:hover{
+    background: rgba(226, 0, 0, 0.7);
+}
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: #6bd36b;
+    font-size: 26px;
+    bottom: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+
+}
+.box{
+    margin: auto;
+    max-width: 80vw;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.container{
+    margin-top: 5rem;
+    width: 45%;
+    border: solid 2px white;
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+}
+.container:hover{
+    box-shadow: 0px 0px 50px  rgba(245, 245, 245, 0.2);
+}
+
+.container1{
+    margin-top: 5rem;
+    width: 20%;
+    border: solid 2px #6bd36b;
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+    background-size: cover; /* لتغطية كامل المساحة */
+}
+.container1:hover{
+    box-shadow: 0px 0px 50px  rgba(245, 245, 245, 0.2);
+}
+h1, p{
+    margin-top: 2rem;
+    line-height: 2rem;
+    letter-spacing: 3px;
+    color: #6bd36b;
+}
+.socials{
+    margin: auto;
+    max-width: 80vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+.cprights {
+    text-align: center;
+}
+
+.logo1 {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    top: -250px;
+    left: -45%;
+}
+
+.galas {
+    width: 100%;
+    background-color: #303030;
+}
+
+
+.nuotraukagalas {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    top: 25%;
+    left: -30%;
+}
+
+.tekstasgalas {
+    position: relative;
+    left: 366%;
+    top: 26%;
+    color: #6bd36b;
+}
+
+.youtube {
+    position: relative;
+    top: -30%;
+    left: 300%;
+    color: #6bd36b;
+}
+
+.youtube:hover {
+    color: red;
+    transition: 0.5s;
+}
+
+.tiktok {
+    position: relative;
+    top: 30%;
+    left: -20%;
+    color: #6bd36b;
+}
+
+.tiktok:hover {
+    color: rgb(154, 165, 1);
+    transition: 0.5s;
+}
+
+.instagram {
+    position: relative;
+    top: -3%;
+    left: 120%;
+    color: #6bd36b;
+}
+
+.instagram:hover {
+    color: #a50145;
+    transition: 0.5s;
+}
+
+.virsus h1 {
+    position: relative;
+    top: -73px;
+    left: -85%;
+}
+
+.aboutdeze1 h1 {
+    position: relative;
+    top: -130px;
+    left: 57%;
+    font-size: 56px;
+}
+
+.aboutdeze1 {
+
+    position: relative;
+    left: 6%;
+    top: -600px;
+    border: solid 2px white;
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+    width: 660px;
+    height: 350px;
+    background-image: url(images/events.png);
+}
+
+.aboutdeze1:hover{
+    box-shadow: 0px 0px 50px  rgba(245, 245, 245, 0.2);
+}
+
+.aboutdeze2 {
+    position: relative;
+    left: 58%;
+    top: -955px;
+    border: solid 2px white;
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+    width: 660px;
+    height: 350px;
+}
+
+.aboutdeze2:hover{
+    box-shadow: 0px 0px 50px  rgba(245, 245, 245, 0.2);
+}
+
+.aboutdeze2 p {
+    text-align: center;
+    font-size: 20px;
+}
+
+
+.aboutdeze3 {
+    position: relative;
+    left: 6%;
+    top: -600px;
+    border: solid 2px white;
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+    width: 660px;
+    height: 350px;
+    background-image: url(images/jobs.png);
+}
+
+.aboutdeze3:hover{
+    box-shadow: 0px 0px 50px  rgba(245, 245, 245, 0.2);
+}
+
+.aboutdeze4 {
+    position: relative;
+    left: 58%;
+    top: -955px;
+    border: solid 2px white;
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+    width: 660px;
+    height: 350px;
+}
+
+.aboutdeze4:hover{
+    box-shadow: 0px 0px 50px  rgba(245, 245, 245, 0.2);
+}
+
+.aboutdeze4 p {
+    text-align: center;
+    font-size: 20px;
+}
+
+.aboutdeze3 h1 {
+    position: relative;
+    top: -130px;
+    left: 50%;
+    font-size: 56px;
+}
+
+.aboutdeze5 h1 {
+    position: relative;
+    top: -130px;
+    left: 47%;
+    font-size: 56px;
+}
+
+.aboutdeze5 {
+    position: relative;
+    left: 6%;
+    top: -600px;
+    border: solid 2px white;
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+    width: 660px;
+    height: 350px;
+    background-image: url(images/gangs.png);
+}
+
+.aboutdeze5:hover{
+    box-shadow: 0px 0px 50px  rgba(245, 245, 245, 0.2);
+}
+
+.aboutdeze6 {
+    position: relative;
+    left: 58%;
+    top: -955px;
+    border: solid 2px white;
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+    width: 660px;
+    height: 350px;
+}
+
+.aboutdeze6:hover{
+    box-shadow: 0px 0px 50px  rgba(245, 245, 245, 0.2);
+}
+
+.aboutdeze6 p {
+    text-align: center;
+    font-size: 20px;
+}
+
+.aboutdeze7 h1 {
+    position: relative;
+    top: -130px;
+    left: 57%;
+    font-size: 56px;
+}
+
+.aboutdeze7 {
+    position: relative;
+    left: 6%;
+    top: -600px;
+    border: solid 2px white;
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+    width: 660px;
+    height: 350px;
+    background-image: url(images/veiklos.png);
+}
+
+.aboutdeze7:hover{
+    box-shadow: 0px 0px 50px  rgba(245, 245, 245, 0.2);
+}
+
+.aboutdeze8 {
+    position: relative;
+    left: 58%;
+    top: -955px;
+    border: solid 2px white;
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+    width: 660px;
+    height: 350px;
+}
+
+.aboutdeze8:hover{
+    box-shadow: 0px 0px 50px  rgba(245, 245, 245, 0.2);
+}
+
+.aboutdeze8 p {
+    text-align: center;
+    font-size: 20px;
+}
+
+.members {
+    position: relative;
+    top: -750px;
+    left: 758px;
+    font-size: 56px;
+    width: fit-content;
+}
+
+
+.membersbox {
+    position: relative;
+    left: 6%;
+    top: -531px;
+    border: solid 2px white;
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+    width: 300px;
+    height: 350px;
+    background-image: url("https://images-ext-1.discordapp.net/external/3yFtrasH4hrW6_VtY2fuBeYI7ULqcPJoZiNS-afN1q0/%3Fsize%3D1024/https/cdn.discordapp.com/guilds/1187872835809591326/users/581650561309343747/avatars/733f26058a97c91fcc78899f99d4433c.png?format=webp&quality=lossless&width=300&height=300");
+}
+
+.membersbox:hover{
+    box-shadow: 0px 0px 50px  rgba(245, 245, 245, 0.2);
+}
+
+.vardas1 {
+    position: relative;
+    left: 6%;
+    top: -500px;
+    border: solid 2px white;
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+    width: 300px;
+    height: 68px;
+    text-align: center;
+}
+
+.vardas1 h1 {
+    font-size: 40px;
+    position: relative;
+    top: -15px;
+}
+
+.vardas1:hover{
+    box-shadow: 0px 0px 50px  rgba(245, 245, 245, 0.2);
+}
+
+.membersbox2 {
+    position: relative;
+    left: 6%;
+    top: -436px;
+    border: solid 2px white;
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+    width: 300px;
+    height: 350px;
+    background-image: url("https://images-ext-1.discordapp.net/external/ywCWD5Jy8BfYRCfBG4knxP-c9UXZQyKWQ9C9lKbwfF8/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/629506454822453258/c866a70fa13deab995b367d50a5c22a7.png?format=webp&quality=lossless");
+}
+
+.membersbox2:hover{
+    box-shadow: 0px 0px 50px  rgba(245, 245, 245, 0.2);
+}
+.vardas8 {
+    position: relative;
+    left: 6%;
+    top: -575px;
+    border: solid 2px white;
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+    width: 300px;
+    height: 68px;
+    text-align: center;
+}
+
+.vardas8 h1 {
+    font-size: 40px;
+    position: relative;
+    top: -15px;
+}
+
+.vardas8:hover{
+    box-shadow: 0px 0px 50px  rgba(245, 245, 245, 0.2);
+}
+
+.vardas9 {
+    position: relative;
+    left: 41%;
+    top: -997px;
+    border: solid 2px white;
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+    width: 300px;
+    height: 68px;
+    text-align: center;
+}
+
+.vardas9 h1 {
+    font-size: 40px;
+    position: relative;
+    top: -15px;
+}
+
+.vardas9:hover{
+    box-shadow: 0px 0px 50px  rgba(245, 245, 245, 0.2);
+}
+
+
+
+
+
+.membersbox9 {
+    position: relative;
+    left: 41%;
+    top: -935px;
+    border: solid 2px white;
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+    width: 300px;
+    height: 350px;
+    background-image: url("https://images-ext-1.discordapp.net/external/1c2kPmQSQ-uJ1si4s1dAWcsmtayYEwpCxAEvFSxkVa8/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/819922356826800139/bfffe1531de2d1deacd3e6878ee9e2ee.png?format=webp&quality=lossless");
+}
+
+.membersbox9:hover{
+    box-shadow: 0px 0px 50px  rgba(245, 245, 245, 0.2);
+}
+.vardas2 {
+    position: relative;
+    left: 6%;
+    top: -483px;
+    border: solid 2px white;
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+    width: 300px;
+    height: 68px;
+    text-align: center;
+}
+
+.vardas2 h1 {
+    font-size: 40px;
+    position: relative;
+    top: -15px;
+}
+
+.vardas2:hover{
+    box-shadow: 0px 0px 50px  rgba(245, 245, 245, 0.2);
+}
+
+.membersbox3 {
+    position: relative;
+    left: 92.05%;
+    top: -412px;
+    border: solid 2px white;
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+    width: 300px;
+    height: 350px;
+    background-image: url("https://images-ext-1.discordapp.net/external/v6_3HhxfmHxUam-JwQpKAYB2h9AmGus3Qtg3S8Y2Hqs/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/796094077505503314/4c0b33bf5a636dd91e20a914d90f4f08.png?format=webp&quality=lossless");
+    margin: -970px;
+}
+
+.membersbox3:hover{
+    box-shadow: 0px 0px 50px  rgba(245, 245, 245, 0.2);
+}
+
+.vardas3 {
+    position: relative;
+    left: 41%;
+    top: -1416px;
+    border: solid 2px white;
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+    width: 300px;
+    height: 68px;
+    text-align: center;
+}
+
+.vardas3 h1 {
+    font-size: 40px;
+    position: relative;
+    top: -15px;
+}
+
+.vardas3:hover{
+    box-shadow: 0px 0px 50px  rgba(245, 245, 245, 0.2);
+}
+
+.membersbox4 {
+    position: relative;
+    left: 41%;
+    top: 655px;
+    border: solid 2px white;
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+    width: 300px;
+    height: 350px;
+    background-image: url("https://images-ext-1.discordapp.net/external/x6MgE2W4oRAzV319W6MCe0J6b6skAUErHBih43Wy0K0/%3Fsize%3D1024/https/cdn.discordapp.com/guilds/1187872835809591326/users/676777445512183819/avatars/280c5095bb23dd1c1ecbf07f65f7b452.png?format=webp&quality=lossless");
+}
+
+.membersbox4:hover{
+    box-shadow: 0px 0px 50px  rgba(245, 245, 245, 0.2);
+}
+
+.vardas4 {
+    position: relative;
+    left: 41%;
+    top: 606px;
+    border: solid 2px white;
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+    width: 300px;
+    height: 68px;
+    text-align: center;
+}
+
+.vardas4 h1 {
+    font-size: 40px;
+    position: relative;
+    top: -15px;
+}
+
+.vardas4:hover{
+    box-shadow: 0px 0px 50px  rgba(245, 245, 245, 0.2);
+}
+
+.membersbox5 {
+    position: relative;
+    left: 77%;
+    top: 229px;
+    border: solid 2px white;
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+    width: 300px;
+    height: 350px;
+    background-image: url("https://images-ext-1.discordapp.net/external/ZupThrqmezQ7eII8ygR7DnJjmbfkHDSrI7Br7RAeE_o/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/789613021030252555/1a571a591211d236d9853083c5f2e975.png?format=webp&quality=lossless");
+}
+
+.membersbox5:hover{
+    box-shadow: 0px 0px 50px  rgba(245, 245, 245, 0.2);
+}
+
+.vardas5 {
+    position: relative;
+    left: 77%;
+    top: 179px;
+    border: solid 2px white;
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+    width: 300px;
+    height: 68px;
+    text-align: center;
+}
+
+.vardas5 h1 {
+    font-size: 40px;
+    position: relative;
+    top: -15px;
+}
+
+.vardas5:hover{
+    box-shadow: 0px 0px 50px  rgba(245, 245, 245, 0.2);
+}
+
+.membersbox6 {
+    position: relative;
+    left: 77%;
+    top: -718px;
+    border: solid 2px white;
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+    width: 300px;
+    height: 350px;
+    background-image: url("https://images-ext-1.discordapp.net/external/DC9X2CS-FHfZstHWjGN1PUR4sfXrbEUvtzi80HYcFIw/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/704068029842980965/3e1320ea95dba243ebdf0a65e1e25216.png?format=webp&quality=lossless&width=300&height=300");
+}
+
+.membersbox6:hover{
+    box-shadow: 0px 0px 50px  rgba(245, 245, 245, 0.2);
+}
+.membersbox7 {
+   position: relative;
+    left: 77%;
+    top: -84px;
+    border: solid 2px white;
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+    width: 300px;
+    height: 350px;
+    background-image: url("https://images-ext-1.discordapp.net/external/Niocx5nyNzWQBDU4Ay1urX_9pwZBJAdH71KNMXa0uho/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/800142047700582400/bc29fb55796997cc85eb0c82bc28d123.png?format=webp&quality=lossless");
+}
+
+.membersbox7:hover{
+    box-shadow: 0px 0px 50px  rgba(245, 245, 245, 0.2);
+}
+.membersbox8 {
+    position: relative;
+    left: 6%;
+    top: -519px;
+    border: solid 2px white;
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+    width: 300px;
+    height: 350px;
+    background-image: url("https://images-ext-1.discordapp.net/external/0q-Mssr_Sk2P_0p0CotsmYS6NH6StW47PfeGRLxlymY/%3Fsize%3D1024/https/cdn.discordapp.com/guilds/1187872835809591326/users/498523801982730260/avatars/5091b3bdcb7dedf300d8c0f76db62037.png?format=webp&quality=lossless");
+}
+
+.membersbox8:hover{
+    box-shadow: 0px 0px 50px  rgba(245, 245, 245, 0.2);
+}
+
+
+.vardas6 {
+    position: relative;
+    left: 77%;
+    top: -754px;
+    border: solid 2px white;
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+    width: 300px;
+    height: 68px;
+    text-align: center;
+}
+
+.vardas6 h1 {
+    font-size: 40px;
+    position: relative;
+    top: -15px;
+}
+
+.vardas6:hover{
+    box-shadow: 0px 0px 50px  rgba(245, 245, 245, 0.2);
+}
+.vardas7 {
+   position: relative;
+    left: 77%;
+    top: -140px;
+    border: solid 2px white;
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+    width: 300px;
+    height: 68px;
+    text-align: center;
+}
+
+.vardas7 h1 {
+    font-size: 40px;
+    position: relative;
+    top: -15px;
+}
+
+.vardas7:hover{
+    box-shadow: 0px 0px 50px  rgba(245, 245, 245, 0.2);
+}
+.rules1 {
+    display: flex;
+    padding-top: 50px;
+    justify-content: center;
+}
+
+.rules2 {
+    max-width: 450px;
+    overflow: hidden;
+    font-weight: 500;
+}
+
+.rules2:hover {
+    box-shadow: 0px 0px 50px  rgba(245, 245, 245, 0.2);
+}
+
+.rules2 input{
+    display: none;
+}
+
+.rules2 label {
+    position: relative;
+    font-weight: 600;
+    color: #6bd36b;
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+    z-index: 1;
+    border: solid 2px white;
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+    width: 400px;
+    height: 30px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.rules2 label::after {
+    content: "";
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    width: 18px;
+    height: 18px;
+    background: url(images/arrow.svg);
+    transition: all 0.3s ease;
+}
+
+.rules2 input:checked + label::after {
+    transform: rotate(90deg);
+}
+
+.rules3 {
+    max-height: 1px;
+    overflow: hidden;
+    border-radius: 4px;
+    line-height: 1.4;
+    position: relative;
+    top: -100%;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+    border: solid 2px white;
+    width: 430px;
+    text-align: center;
+}
+
+.rules2 input:checked ~ .rules3 {
+    max-height: 300px;
+    padding-bottom: 25px;
+    background: transparent;
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .1), 0 4px 11px 0 rgba(0, 0, 0, .08);
+    opacity: 1;
+    top: 0;
+}
+
+.rules3 h2 {
+    margin-bottom: 10px;
+    padding: 15px 15px 0;
+    color: #000000;
+}
+
+.rules3 p {
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+}
